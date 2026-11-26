@@ -1483,10 +1483,12 @@ main{padding-block:0 64px}
 .pg-brands{padding-block:var(--sec) 0}
 .is-promo{padding-top:var(--sec)}
 .is-promo{scroll-margin-top:calc(60px - var(--sec))}
-#kia .stock-head{margin-top:var(--sec)}
+#kia .stock-head{margin-top:0}   /* Jean, 26 Nov: no gap between the specials and the Kia band */
+.is-promo{padding-bottom:0}
+.is-promo .pr-foot{margin:0;padding-block:14px}
 #kia-more{padding-top:clamp(28px,3vw,48px)}
 .pg-full{margin-top:var(--sec)}
-#geely .stock-head{margin-top:var(--sec)}
+#geely .stock-head{margin-top:0}   /* Jean, 26 Nov: no gap between the E5 banner and the Geely band */
 #geely{scroll-margin-top:84px}
 .pg-svc{padding-block:var(--sec) 0}
 .pg-team{padding-top:var(--sec)}
