@@ -1384,12 +1384,11 @@ main{padding-block:0 64px}
 .pg-story{height:auto!important}
 .pg-story-pin{position:relative;height:min(88vh,860px);min-height:560px}
 .pg-story-pin::after{background:linear-gradient(90deg,rgba(6,16,22,.78) 0%,rgba(6,16,22,.42) 34%,rgba(6,16,22,0) 62%),linear-gradient(180deg,rgba(6,16,22,.28) 0%,rgba(6,16,22,0) 22%)}
-.pg-story-pin::after{background:linear-gradient(180deg,rgba(6,16,22,.62) 0%,rgba(6,16,22,.3) 30%,rgba(6,16,22,0) 52%)}
-.pg-story-tx{top:clamp(36px,8vh,88px);bottom:auto;left:var(--gutter);right:var(--gutter);margin-inline:auto;max-width:1040px;text-align:center}
+.pg-story-pin::after{background:linear-gradient(180deg,rgba(6,16,22,.3) 0%,rgba(6,16,22,0) 18%,rgba(6,16,22,0) 58%,rgba(6,16,22,.5) 78%,rgba(6,16,22,.82) 100%)}
+.pg-story-tx{top:auto;bottom:clamp(28px,5vh,56px);left:var(--gutter);right:var(--gutter);margin-inline:auto;max-width:1040px;text-align:center}
 .pg-story-tx h2{font-size:clamp(34px,4.2vw,62px)}
 .pg-story-tx p{max-width:620px;margin-inline:auto}
 .pg-story-tx .pg-hero-acts{justify-content:center}
-@media (min-width:768px){.pg-story-tx .st{position:relative;bottom:auto}}
 @media (max-width:767px){
   .pg-story-pin{height:86svh;min-height:520px}
   .pg-story-pin::after{background:linear-gradient(180deg,rgba(6,16,22,.2) 0%,rgba(6,16,22,0) 30%,rgba(6,16,22,.55) 58%,rgba(6,16,22,.92) 100%)}
@@ -1437,7 +1436,8 @@ main{padding-block:0 64px}
 #kia,#geely{padding-top:0}
 #kia .stock-head,#geely .stock-head{display:block;margin:clamp(40px,5vw,72px) 0 0;padding:clamp(40px,5vw,72px) var(--gutter) clamp(150px,13vw,210px);border:0;color:#fff;text-align:center;position:relative;isolation:isolate;
   background:#0b1a20 center 38%/cover no-repeat}
-#kia .stock-head{background-image:url(img/site/band-kia.jpg)}
+#kia .stock-head{background-image:url(img/site/band-kia.jpg);background-position:center 20%}
+#kia .stock-head::before{background:linear-gradient(180deg,rgba(6,16,22,.62) 0%,rgba(6,16,22,.34) 50%,rgba(246,245,241,0) 80%,var(--bg) 100%)}
 #geely .stock-head{background-image:url(img/site/band-geely.jpg);margin-top:0}
 #kia .stock-head::before,#geely .stock-head::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(6,16,22,.5) 0%,rgba(6,16,22,.12) 55%,rgba(246,245,241,0) 78%,var(--bg) 100%)}
 #kia .stock-head h2,#geely .stock-head h2{color:#fff;font-size:clamp(32px,4.2vw,60px);text-shadow:0 2px 24px rgba(0,0,0,.35)}
@@ -1591,7 +1591,7 @@ main{padding-block:0 64px}
     "site/svc-parts": "#3a3f42",
     "site/svc-finance": "#a3aeba",
     "site/svc-tradein": "#81796e",
-    "site/band-kia": "#80817e",
+    "site/band-kia": "#6b6868",
     "site/band-geely": "#4d586f",
     "site/feature-e5": "#8a9ba8"
   },
@@ -1784,7 +1784,7 @@ main{padding-block:0 64px}
       "scenes": [
         {
           "image": "site/hero-geely",
-          "focus": "50% 70%",
+          "focus": "50% 100%",
           "focusMobile": "52% 60%",
           "kicker": "",
           "title": "Geely has arrived in Tzaneen",
